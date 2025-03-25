@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
         - name: server
-          image: "123"
+          image: ${IMAGE_FULL_NAME_PARAM}
           env:
             - name: MOVIE_CATALOG_SERVICE
               value: http://netflix-catalog-service:8080
@@ -37,4 +37,4 @@ spec:
   template:
     spec:
       containers:
-        - image: "123"
+        - image: ${IMAGE_FULL_NAME_PARAM}
